@@ -9,11 +9,11 @@ const container = document.querySelector('main')
 const p = document.querySelector('test')
 
 //random page variable:
-randPage = Math.floor(Math.random() * 567)
+// randPage = Math.floor(Math.random() * 567)
 
 //random single card generated
 const createCard = () => {
-  const endPoint = `https://api.magicthegathering.io/v1/cards/?contains=imageUrl&page=${randPage}`
+  const endPoint = `https://api.magicthegathering.io/v1/cards?pageSize=7&random=true&contains=imageUrl`
 fetch(endPoint)
   .then(res => {
     if(res.ok) {
@@ -57,7 +57,7 @@ drawBtn.addEventListener('click', createCard);
 
 //seven card hand is generated
 const createHand = () => {
-  const endPoint = `https://api.magicthegathering.io/v1/cards/?contains=imageUrl&page=${randPage}`
+  const endPoint = `https://api.magicthegathering.io/v1/cards?pageSize=7&random=true&contains=imageUrl`
 fetch(endPoint)
   .then(res => {
     if(res.ok) {
