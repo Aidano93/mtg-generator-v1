@@ -1,0 +1,45 @@
+body {
+  background-color: #6F647A;
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  
+  font-family: serif;
+  padding: 1rem;
+  border: 0.2rem solid black;
+  border-radius: 0.3rem;
+  
+  background-color: #668A7E;
+  
+  cursor: pointer;
+}
+
+.card-container {
+  background-color: #8F5A26;
+  border: black solid 0.5rem;
+  
+  
+  margin: 0;
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+
+  min-height: 24rem;
+}
+
+
+h1 {
+  font-size: 1rem;
+/*   max-width: 20ch; */
+}
