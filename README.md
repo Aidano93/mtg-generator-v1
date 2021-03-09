@@ -4,7 +4,7 @@ Aidan O'Reilly
 
 https://aidano93.github.io/mtg-generator-v1/
 
-##Description
+## Description
 
 An exercise in using the fetch() method to pull data from a public API.
 
