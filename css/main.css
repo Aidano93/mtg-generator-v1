@@ -39,7 +39,14 @@ button {
 }
 
 
-h1 {
+h2 {
   font-size: 1rem;
+  max-width: 30ch;
 /*   max-width: 20ch; */
+}
+
+img {
+  width: 265px;
+  height: auto;
+
 }
