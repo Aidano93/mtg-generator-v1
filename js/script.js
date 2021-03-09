@@ -1,6 +1,6 @@
+//html elements created on click
 const insertCard = (card) => {
   const container = document.querySelector('main')
-  //html elements created on click
   const section = document.createElement('section')
   container.appendChild(section);
   const h2 = document.createElement('h2');
@@ -13,9 +13,6 @@ const insertCard = (card) => {
   // s added to http to fix broken img links
   img.src = card.imageUrl.slice(0, 4) + 's' + card.imageUrl.slice(4);
 };
-
-//random page variable:
-// randPage = Math.floor(Math.random() * 567)
 
 //random card(s) generated
 const createCards = (quantity) => {
@@ -55,7 +52,7 @@ handBtn.addEventListener('click', function() {
   createCards(7)
 });
 
-//reload page 'discarding' the card
+//reload page 'discarding' the card(s)
 const discBtn = document.querySelector('.discard')
 discBtn.addEventListener('click',  function(){
   history.go(0);
